@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Genius Starling Template</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+</head>
+<style>
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.item0 {
+
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.item1{
+    
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.item2{
+    
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.item3{
+    
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.item4{
+    
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.item5{
+    
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.item6{
+    
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.item7{
+    
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+}
+.item img {
+    height:150px;
+    width:150px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.item p {
+    text-align: center;
+    margin: 10px 0;
+    margin-left: 20px;
+    position: absolute;
+}
+
+.item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/*slider part*/
+.slider {
+    position: relative;
+    max-width: 98%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px black solid;
+    margin-top: 80px;
+    height: 550px;
+    background-color: gray;
+}
+
+.slides {
+    margin-top: 30px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* 100% for each of the 3 slides */
+}
+
+.slide {
+    flex: 1 0 100%; /* Ensures each slide takes 100% width of the container */
+    border: 1px black solid;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    height: 500px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+}
+
+
+
+/* slider part end*/
+</style>
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <h1><font style="color: white;">STECHION </font> </h1>
+        
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#download">Blog</a>
+            <a href="#download">About</a>
+            <a href="#footer">Contact</a>
+          
+        </nav>
+
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+        
+    </header>
+    <!-- navbar sections ends  -->
+
+
+     <!-- home section stars  -->
+
+      
+    
+     <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="girlimage1.png" alt="Image 1"></div>
+            <div class="slide"><img src="girlimage2.jpeg" alt="Image 2"></div>
+            <div class="slide"><img src="girlimage3.jpeg" alt="Image 3"></div>
+        </div>
+    </div>
+
+    
+
+    <!-- home section ends -->
+
+    <!--content starts-->
+    <div class="container">
+        
+        <div class="box">
+            <h2><font style="font-size: 30px;"> HOW IT WORKS </font></h2>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+                <p>Give your friends $10.</p>
+                </div>
+                <div class="image-item">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    <p>They make a purchase.</p>
+                </div>
+                <div class="image-item">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <p>Get $10 in cash.</p>
+                </div>
+            </div>
+            <form action="https://script.google.com/macros/s/AKfycbzaS22hcgyfJHi7NEPoyKAn9bCXMp9RWz6RwiNbIMPq1aoJEMZCoWhQP17u4RPrPaTt/exec" method="post" class="form">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <input type="number" id="number" name="number" placeholder="Enter your number" required>
+                
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </div>
+    <!--content ends-->
+    <hr>
+   
+    <div class="container1">
+        <div class="item0">
+            <a href="https://www.weichertreferrals.com/place-a-referral/">
+                <img src="download.jpg" alt="Example Image 1"  <font style="height: 100px; width: 150px;"></font>
+                <p>Place a referral</p>
+            </a>
+        </div>
+        <div class="item1">
+            <a href="https://example.com/page2">
+                <img src="download (4).jpg" alt="Example Image 2" <font style="height: 100px; width: 150px;"></font>
+                <p>Contact</p>
+            </a>
+        </div>
+        <div class="item2">
+            <a href="https://example.com/page3">
+                <img src="download (1).jpg" alt="Example Image 3" <font style="height: 105px; width: 200px;"></font>
+                <p>Referring business to us </p>
+            </a>
+        </div>
+        <div class="item3">
+            <a href="https://example.com/page4">
+                <img src="download (6).jpg" alt="Example Image 4" <font style="height: 100px; width: 150px;"></font>
+                <p>Place a referral</p>
+            </a>
+        </div>
+        <div class="item4">
+            <a href="https://example.com/page5">
+                <img src="download (2).jpg" alt="Example Image 5" <font style="height: 100px; width: 150px;"></font>
+                <p>About -weichert referral</p>
+            </a>
+        </div>
+        <div class="item5">
+            <a href="https://example.com/page6">
+                <img src="download (5).jpg" alt="Example Image 6"<font style="height: 100px; width: 155px;"></font>
+                <p>TAbout -weichert referral</p>
+            </a>
+        </div>
+        <div class="item6">
+            <a href="https://example.com/page7">
+                <img src="download (3).jpg" alt="Example Image 7" <font style="height: 100px; width: 150px;"></font>
+                <p>NJ Renewal - -weichert</p>
+            </a>
+        </div>
+        <div class="item7">
+            <a href="https://example.com/page8">
+                <img src="download (7).jpg" alt="Example Image 8"  <font style="height: 100px; width: 150px;"></font>
+                <p>get to know metro referral</p>
+            </a>
+        </div>
+     
+    </div>
+
+
+    <!--contact us page start-->
+    <div class="contact-info" id="contact-info">
+ 
+        <div id="close-contact-info" class=""></div>
+     
+        <div class="info">
+           <i class="fas fa-phone"></i>
+           <p>+91 9136891666</p>
+          
+          
+           
+        </div>
+     
+        <div class="info">
+           <i class="fas fa-envelope"></i>
+          <p>rajaramzparab@gmail.com</p>
+      
+           
+        </div>
+     
+        <div class="info">
+           <i class="fas fa-map-marker-alt"></i>
+           <p>203 Ananddeep Building, Station Road,<br> Dombivli East, Thane - 421201 <br>(Near Madhuban Talkies)</p>
+  
+        </div>
+     
+        <div class="share">
+           <a href="#" class="fab fa-facebook-f"></a>
+           <a href="#" class="fab fa-twitter"></a>
+           <a href="#" class="fab fa-instagram"></a>
+           <a href="#" class="fab fa-linkedin"></a>
+        </div>
+       
+    </div>
+    <!--contact-form end-->
+  
+
+
+
+    <script>
+        let menu = document.querySelector("#menu-btn")
+let navbar = document.querySelector(".navbar")
+
+
+menu.onclick = () =>{
+    menu.classList.toggle("fa-times")
+    navbar.classList.toggle("active")
+}
+
+
+window.onscroll = () =>{
+    menu.classList.remove("fa-times")
+    navbar.classList.remove("active")
+}
+    </script>
+
+<script>
+    let slideIndex = 0;
+
+function showSlides() {
+let slides = document.querySelector(".slides");
+let totalSlides = document.querySelectorAll(".slide").length;
+
+slideIndex++;
+if (slideIndex >= totalSlides) {
+    slideIndex = 0;
+}
+
+slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+// Initialize slider and set interval for automatic sliding
+function startSlider() {
+showSlides();
+setInterval(showSlides, 3000); // Change slide every 3 seconds
+}
+
+// Start the slider
+startSlider();
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzaS22hcgyfJHi7NEPoyKAn9bCXMp9RWz6RwiNbIMPq1aoJEMZCoWhQP17u4RPrPaTt/exec'
+
+        const form = document.forms['contact-form']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => alert("Thank you! your form is submitted successfully." ))
+       .then(() => { window.location.reload(); })
+       .catch(error => console.error('Error!', error.message))
+      })
+  </script>
+
+
+</body>
+
+</html>
