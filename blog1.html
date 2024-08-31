@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> blog1</title>
+    <link rel="stylesheet" href="blog1.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+</head>
+
+
+
+
+/* slider part end*/
+</style>
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <h1><font style="color: white; font-size: 35px;">STECHION </font> </h1>
+        
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#main-content">Blog</a>
+            <a href="#contact-info">Contact</a>
+          
+        </nav>
+
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+        
+    </header>
+    <!-- navbar sections ends  -->
+   
+    <main class="main-content" id="main-content">
+        <div class="container">
+            <section class="blog-post">
+                <div class="post-text">
+                    <h2 class="post-title">How to Add a Blog to Your Website</h2>
+                    <p class="post-content">What is a blog?</p>
+                    <p class="post-content">A blog is a regular update by either the website owner or a person assigned to provide announcements. It’s often for business use but can also act as a personal chronicle.</p>
+                    
+                </div>
+                <img src="0ac18f1a-2434-4889-9a89-9d3bc9d30b80.jpg" alt="Blog Post Image 1" class="post-image">
+                <a href="index.html" style="text-align: center; margin-left: 10px;"><font size="2.5rem" color="green" weight="bold">Click here to visit website >>> </font><button type="button" style="height: 30px; width: 150px; background-color: navy; color: white; font-weight: bold;">STECHION</button></a>
+                <div class="post-text">
+                    <p class="post-content">In addition to updates, it can also provide information that never expires or entertains people. An additional definition of a blog is that of a “public journal” or a place to tell your branded story.</p>
+                </div>
+            </section>
+
+            <section class="blog-post">
+                 <div class="post-text">
+                    <h2 class="post-title">Why should you be creating a blog on your website?</h2>
+                    <p class="post-content">Without website visitors, your website won’t do you much good. So how do you get them there?</p>
+                    <p class="post-content">One way is by having a blog and posting on it often enough for them to take an interest in it. This works hand in hand with adding topics based on keywords your target audience would search for.</p>
+                </div>
+                <img src="download (7).jpg" alt="Blog Post Image 2" class="post-image">
+                <div class="post-text">
+                    <p class="post-content">In other words, having a blog will improve SEO and drive visitors to your website. This can also increase click through rates and boost sales conversions.</p>
+                </div>
+            </section>
+
+            <!-- Add more blog posts as needed -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p><font style="color: white;">&copy; 2024 My Blog. All rights reserved.</font> </p>
+        </div>
+    </footer>
+
+ 
+
+    
+    <script>
+        let menu = document.querySelector("#menu-btn")
+let navbar = document.querySelector(".navbar")
+
+
+menu.onclick = () =>{
+    menu.classList.toggle("fa-times")
+    navbar.classList.toggle("active")
+}
+
+
+window.onscroll = () =>{
+    menu.classList.remove("fa-times")
+    navbar.classList.remove("active")
+}
+    </script>
+
+
+</body>
+
+</html>
