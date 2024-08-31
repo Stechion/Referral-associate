@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STECHION</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+</head>
+<style>
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.gallery {
+   
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px; /* Space between images */
+    padding: 16px;
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 0 auto; /* Center the gallery */
+    margin-top: 270px;
+}
+
+.gallery-item {
+   
+   border-radius: 8px;
+   overflow: hidden;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   text-align: center;
+   padding: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.link {
+    display: block;
+    margin-top: 8px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: -10px; /* Two images per row on tablets and larger phones */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* Two images per row on smaller screens */
+    }
+}
+
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/*slider part*/
+.slider {
+    position: relative;
+    max-width: 98%;
+    margin: auto;
+    overflow: hidden;
+    border: 1px black solid;
+    margin-top: 80px;
+    height: 550px;
+    background-color: gray;
+}
+
+.slides {
+    margin-top: 30px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* 100% for each of the 3 slides */
+}
+
+.slide {
+    flex: 1 0 100%; /* Ensures each slide takes 100% width of the container */
+    border: 1px black solid;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    height: 500px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+
+}
+
+
+
+/* slider part end*/
+</style>
+
+<body>
+    <!-- navbar sections starts  -->
+    <header class="header">
+        <h1><font style="color: white; font-size: 35px;">STECHION </font> </h1>
+        
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#download">Blog</a>
+          
+        </nav>
+
+
+        <div class="fas fa-bars" id="menu-btn"></div>
+        
+    </header>
+    <!-- navbar sections ends  -->
+
+
+     <!-- home section stars  -->
+
+      
+    
+     <div class="slider">
+        <div class="slides">
+            <div class="slide"><img src="girlimage1.png" alt="Image 1"></div>
+            <div class="slide"><img src="girlimage2.jpeg" alt="Image 2"></div>
+            <div class="slide"><img src="girlimage3.jpeg" alt="Image 3"></div>
+        </div>
+    </div>
+
+    
+
+    <!-- home section ends -->
+
+    <!--content starts-->
+    <div class="container">
+        
+        <div class="box">
+            <h2><font style="font-size: 30px;"> HOW IT WORKS </font></h2>
+            <div class="image-gallery">
+                <div class="image-item">
+                    <i class="fa fa-gift" aria-hidden="true"></i>
+                <p>Give your friends $10.</p>
+                </div>
+                <div class="image-item">
+                    <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+                    <p>They make a purchase.</p>
+                </div>
+                <div class="image-item">
+                    <i class="fa fa-credit-card" aria-hidden="true"></i>
+                    <p>Get $10 in cash.</p>
+                </div>
+            </div>
+            <form action="https://script.google.com/macros/s/AKfycbzaS22hcgyfJHi7NEPoyKAn9bCXMp9RWz6RwiNbIMPq1aoJEMZCoWhQP17u4RPrPaTt/exec" method="post" class="form">
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <input type="number" id="number" name="number" placeholder="Enter your number" required>
+                
+                <button type="submit">Get Started</button>
+            </form>
+        </div>
+    </div>
+    <!--content ends-->
+    <hr>
+   
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="download.jpg" alt="Image 1">
+            <a href="blog1.html" class="link">Place a Referral</a>
+        </div>
+        <div class="gallery-item">
+            <img src="download (4).jpg" alt="Image 2">
+            <a href="blog1.html" class="link">Contact</a>
+        </div>
+        <div class="gallery-item">
+            <img src="download (1).jpg" alt="Image 3" style="height: 80px;">
+            <a href="blog1.html" class="link">Referring Business To Us</a>
+        </div>
+        <div class="gallery-item">
+            <img src="download (6).jpg" alt="Image 4" style="height: 80px;">
+            <a href="blog1.html" class="link">Place a Referral</a>
+        </div>
+        <div class="gallery-item">
+            <img src="download (2).jpg" alt="Image 4" style="height: 80px;">
+            <a href="blog1.html" class="link">About-Weichert Referral</a>
+        </div>
+        <div class="gallery-item">
+            <img src="download (5).jpg" alt="Image 4" style="height: 80px;">
+            <a href="blog1.html" class="link">About-Weichert Referral</a>
+        </div>
+        <div class="gallery-item">
+            <img src="download (3).jpg" alt="Image 4" style="height: 80px;">
+            <a href="blog1.html" class="link">NJ Renewal--Weichart</a>
+        </div>
+        <div class="gallery-item">
+            <img src="download (7).jpg" alt="Image 4" style="height: 80px;">
+            <a href="blog1.html" class="link">Get to know Metro Referral</a>
+        </div>
+    </div>
+   <hr id="h1">
+    <!--contact us page start-->
+    <div class="contact-info" id="contact-info">
+ 
+        <div id="close-contact-info" class=""></div>
+     
+        <div class="info">
+           <i class="fas fa-phone"></i>
+           <p>+91 9136891666</p>
+          
+          
+           
+        </div>
+     
+        <div class="info">
+           <i class="fas fa-envelope"></i>
+          <p>rajaramzparab@gmail.com</p>
+      
+           
+        </div>
+     
+        <div class="info">
+           <i class="fas fa-map-marker-alt"></i>
+           <p>203 Ananddeep Building, Station Road,<br> Dombivli East, Thane - 421201 <br>(Near Madhuban Talkies)</p>
+  
+        </div>
+     
+        <div class="share">
+           <a href="#" class="fab fa-facebook-f"></a>
+           <a href="#" class="fab fa-twitter"></a>
+           <a href="#" class="fab fa-instagram"></a>
+           <a href="#" class="fab fa-linkedin"></a>
+        </div>
+       
+    </div>
+    <!--contact-form end-->
+  
+
+
+
+    <script>
+        let menu = document.querySelector("#menu-btn")
+let navbar = document.querySelector(".navbar")
+
+
+menu.onclick = () =>{
+    menu.classList.toggle("fa-times")
+    navbar.classList.toggle("active")
+}
+
+
+window.onscroll = () =>{
+    menu.classList.remove("fa-times")
+    navbar.classList.remove("active")
+}
+    </script>
+
+<script>
+    let slideIndex = 0;
+
+function showSlides() {
+let slides = document.querySelector(".slides");
+let totalSlides = document.querySelectorAll(".slide").length;
+
+slideIndex++;
+if (slideIndex >= totalSlides) {
+    slideIndex = 0;
+}
+
+slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+}
+
+// Initialize slider and set interval for automatic sliding
+function startSlider() {
+showSlides();
+setInterval(showSlides, 3000); // Change slide every 3 seconds
+}
+
+// Start the slider
+startSlider();
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzaS22hcgyfJHi7NEPoyKAn9bCXMp9RWz6RwiNbIMPq1aoJEMZCoWhQP17u4RPrPaTt/exec'
+
+        const form = document.forms['contact-form']
+
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+       .then(response => alert("Thank you! your form is submitted successfully." ))
+       .then(() => { window.location.reload(); })
+       .catch(error => console.error('Error!', error.message))
+      })
+  </script>
+
+
+</body>
+
+</html>
